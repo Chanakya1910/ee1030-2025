@@ -1,0 +1,256 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{txfonts}
+\usepackage{tkz-euclide}
+\usepackage{listings}
+\usepackage{adjustbox}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{gvv}
+\usepackage{lmodern}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\setbeamertemplate{page number in head/foot}[totalframumber]
+
+\usepackage{tcolorbox}
+\tcbuselibrary{minted,breakable,xparse,skins}
+
+\definecolor{bg}{gray}{0.95}
+\lstset{
+    language=C,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    stringstyle=\color{orange},
+    commentstyle=\color{green!60!black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    breaklines=true,
+    showstringspaces=false,
+}
+
+%------------------------------------------------------------
+\title{1.8.28}
+\date{August 31,2025}
+\author{EE25BTECH11011 - Navya Banavathu}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Question}
+Find the equation of the set of the points $P$ such that its distances 
+from the points $A(3,4,-5)$ and $B(-2,1,4)$ are equal.\\
+\end{frame}
+
+\begin{frame}{Solution}
+\begin{align}
+\text{Let }A=(3,4,-5),\quad B=(-2,1,4),\quad P=(x,y,z).
+\end{align}
+
+Using vector notation $\|\cdot\|$ for Euclidean norm,
+
+\begin{align}
+\|P-A\|^2+\|P-B\|^2=2k^2.
+\end{align}
+
+Write $M=\dfrac{A+B}{2}$ (the midpoint of $AB$).\\
+
+Using the identity
+\begin{align}
+\|P-A\|^2+\|P-B\|^2=2\|P-M\|^2+2\|A-M\|^2,
+\end{align}
+
+the condition becomes
+\begin{align}
+2\|P-M\|^2+2\|A-M\|^2=2k^2\\
+\|P-M\|^2=k^2-\|A-M\|^2
+\end{align}
+\end{frame}
+
+\begin{frame}{Section Formula(external division)}
+Now compute $M$ and $\|A-M\|^2$:
+\begin{align}
+M=\frac{A+B}{2}=\left(\frac{3+(-2)}{2},\frac{4+1}{2},\frac{-5+4}{2}\right)
+=\left(\frac{1}{2},\frac{5}{2},-\frac{1}{2}\right),
+\end{align}
+
+\begin{align}
+AB=B-A=(-5,-3,9),\\
+\|AB\|^2=25+9+81=115,
+\end{align}
+
+\begin{align}
+\|A-M\|^2=\frac{\|AB\|^2}{4}=\frac{115}{4}.
+\end{align}
+
+Hence the locus of $P$ is the sphere with centre $M$ and radius
+$\sqrt{k^2-\tfrac{115}{4}}$. Its equation is
+\begin{align}
+\left(x-\tfrac12\right)^2+\left(y-\tfrac52\right)^2+\left(z+\tfrac12\right)^2
+= k^2-\frac{115}{4},
+\end{align}
+which exists (real radius) iff $k^2\ge\frac{115}{4}$
+\end{frame}
+
+\begin{frame}[fragile]{ Code (C)}
+\begin{block}{Part 1}
+\begin{lstlisting}[language=C, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, frame=single]
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double A[3] = {3, 4, -5};
+    double B[3] = {-2, 1, 4};
+    double M[3];   // midpoint
+
+    M[0] = (A[0] + B[0]) / 2.0;
+    M[1] = (A[1] + B[1]) / 2.0;
+    M[2] = (A[2] + B[2]) / 2.0;
+
+    double AB[3];
+    AB[0] = B[0] - A[0];
+    AB[1] = B[1] - A[1];
+    AB[2] = B[2] - A[2];
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{ Code (C)}
+\begin{block}{Part 2}
+\begin{lstlisting}[language=C, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, frame=single]
+ double AB_sq = AB[0]*AB[0] + AB[1]*AB[1] + AB[2]*AB[2];
+    double AM_sq = AB_sq / 4.0;
+    double k;
+    printf("Enter value of k: ");
+    scanf("%lf", &k);
+
+    double radius_sq = k*k - AM_sq;
+
+printf("\n--- Solution for locus of P ---\n");
+ printf("Midpoint M = (%.2f, %.2f, %.2f)\n", M[0], M[1], M[2]);
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{ Code (C)}
+\begin{block}{Part 3}
+\begin{lstlisting}[language=C, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, frame=single]
+    printf("|AB|^2 = %.2f\n", AB_sq);
+    printf("|A-M|^2 = %.2f\n", AM_sq);
+
+    if (radius_sq < 0) {
+    printf("\nNo real sphere exists because radius^2 < 0.\n");
+    } else {
+        printf("\nEquation of sphere:\n");
+        printf("(x - %.2f)^2 + (y - %.2f)^2 + (z - %.2f)^2 = %.2f\n",
+               M[0], M[1], M[2], radius_sq);
+        printf("Centre: (%.2f, %.2f, %.2f)\n", M[0], M[1], M[2]);
+        printf("Radius: %.4f\n", sqrt(radius_sq));
+    }
+    return 0;
+}
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Python Code:Import and Define points}
+\begin{block}{Part 1}
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, frame=single]
+import math
+# Define points A and B
+A = (3, 4, -5)
+B = (-2, 1, 4)
+# Midpoint M = (A+B)/2
+M = tuple((a + b) / 2 for a, b in zip(A, B))
+# Vector AB = B - A
+AB = tuple(b - a for a, b in zip(B, A))
+# |AB|^2
+AB_sq = sum(x**2 for x in AB)
+# |A-M|^2 = |AB|^2 / 4
+AM_sq = AB_sq / 4
+# Input k
+k = float(input("Enter value of k: "))
+# Radius^2
+radius_sq = k*k - AM_sq
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[fragile]{Python Code}
+\begin{block}{Part 2}
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, frame=single]
+print("\n--- Solution for locus of P ---")
+print(f"A = {A},  B = {B}")
+print(f"Midpoint M = {M}")
+print(f"|AB|^2 = {AB_sq}")
+print(f"|A-M|^2 = {AM_sq:.2f}")
+
+if radius_sq < 0:
+    print("\nNo real sphere exists because radius^2 < 0.")
+else:
+    print("\nEquation of sphere:")
+    print(f"(x - {M[0]})^2 + (y - {M[1]})^2 + (z - {M[2]})^2 = {radius_sq}")
+    print(f"Centre: {M}")
+    print(f"Radius: {math.sqrt(radius_sq):.4f}")
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Python Code: Plotting}
+\begin{block}{Part 4}
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, frame=single]
+# --- Plot the sphere ---
+    fig = plt.figure(figsize=(7,7))
+    ax = fig.add_subplot(111, projection='3d')
+
+    # Sphere surface
+    u = np.linspace(0, 2*np.pi, 50)
+    v = np.linspace(0, np.pi, 50)
+    x = M[0] + radius * np.outer(np.cos(u), np.sin(v))
+    y = M[1] + radius * np.outer(np.sin(u), np.sin(v))
+    z = M[2] + radius * np.outer(np.ones_like(u), np.cos(v))
+    ax.plot_surface(x, y, z, color='skyblue', alpha=0.4, edgecolor='k')
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+
+\begin{frame}[fragile]{Python Code: Finishing Plot}
+\begin{block}{Part 5}
+\begin{lstlisting}[language=Python, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, frame=single]
+ # Plot A, B, M
+    ax.scatter(*A, color='red', s=80, label='A (3,4,-5)')
+    ax.scatter(*B, color='green', s=80, label='B (-2,1,4)')
+    ax.scatter(*M, color='blue', s=100, marker='^', label='M (centre)')
+
+    # Connect A and B
+    ax.plot([A[0], B[0]], [A[1], B[1]], [A[2], B[2]], 'k--', label='AB')
+
+    # Labels
+    ax.set_xlabel('X-axis')
+    ax.set_ylabel('Y-axis')
+    ax.set_zlabel('Z-axis')
+    ax.set_title('Locus Sphere for P')
+    ax.legend()
+    plt.show()
+\end{lstlisting}
+\end{block}
+\end{frame}
+
+\begin{frame}{Graphical Representation}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.55\columnwidth]{beamer/figs/fig3.png}
+        \caption{locus of point P}
+    \end{figure}
+\end{frame}
+
+
+\end{document}

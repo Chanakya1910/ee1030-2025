@@ -41,7 +41,7 @@
 \bibliographystyle{IEEEtran}
 \vspace{3cm}
 
-\title{1.4.27}
+\title{1.8.28}
 \author{EE25BTECH11011 - Navya}
 % \maketitle
 % \newpage
@@ -51,40 +51,61 @@
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 \setlength{\intextsep}{10pt} % Space between text and floats
+
 \textbf{Question}:\\
-If $\vec{a}$ and $\vec{b}$ are the position vectors of $A$ and $B$ respectively, find the position vector of a point $C$ in $BA$ produced such that $BC$ = $1.5$ $BA$\\
+Find the equation of the set of the points $P$ such that its distances 
+from the points $A(3,4,-5)$ and $B(-2,1,4)$ are equal.\\
 
-\textbf{Solution:} \\
-$\text{Given the position vectors of } A \text{ and } B \text{ are } \vec{a} \text{ and } \vec{b} $\\
+\textbf{Solution}:\\
+\begin{align}
+\text{Let }A=(3,4,-5),\quad B=(-2,1,4),\quad P=(x,y,z).
+\end{align}
 
-Since $ C $ lies on $ BA $ produced and 
-$ BC = 1.5\, BA $\\
+Using vector notation $\|\cdot\|$ for Euclidean norm,
 
-we have\\
-  $ AC = BC - BA = (1.5 - 1)\,BA = 0.5\,BA.$\\
+\begin{align}
+\|P-A\|^2+\|P-B\|^2=2k^2.
+\end{align}
 
-Thus,\\
-$ AC : CB = 0.5 : 1.5 = 1 : 3 $\\
+Write $M=\dfrac{A+B}{2}$ (the midpoint of $AB$).\\
 
-Therefore, $ C $ divides $ AB $ externally in the ratio $ 1:3 $\\
+Using the identity
+\begin{align}
+\|P-A\|^2+\|P-B\|^2=2\|P-M\|^2+2\|A-M\|^2,
+\end{align}
 
-Writing the ratio as $ k:1 $ 
-we have $ k=3 $.\\
+the condition becomes
+\begin{align}
+2\|P-M\|^2+2\|A-M\|^2=2k^2\\
+\|P-M\|^2=k^2-\|A-M\|^2
+\end{align}
+Now compute $M$ and $\|A-M\|^2$:
 
-By the section formula (external division), the position vector of $C$  is\\
+\begin{align}
+M=\frac{A+B}{2}=\left(\frac{3+(-2)}{2},\frac{4+1}{2},\frac{-5+4}{2}\right)
+=\left(\frac{1}{2},\frac{5}{2},-\frac{1}{2}\right),
+\end{align}
 
-\begin{center}
+\begin{align}
+AB=B-A=(-5,-3,9),\\
+\|AB\|^2=25+9+81=115,
+\end{align}
 
-$\vec{OC} = \frac{k\vec{b} - \vec{a}}{k-1}, \quad (k=3).$\\
-\bigskip
-$\vec{OC} = \frac{3\vec{b} - \vec{a}}{2}.$\\
-\bigskip
-$\therefore \quad \vec{OC} =  \tfrac{3}{2}\vec{b} - \tfrac{1}{2}\vec{a} .$\\
-\end{center}
+\begin{align}
+\|A-M\|^2=\frac{\|AB\|^2}{4}=\frac{115}{4}.
+\end{align}
+
+Hence the locus of $P$ is the sphere with centre $M$ and radius
+$\sqrt{k^2-\tfrac{115}{4}}$. Its equation is
+\begin{align}
+\left(x-\tfrac12\right)^2+\left(y-\tfrac52\right)^2+\left(z+\tfrac12\right)^2
+= k^2-\frac{115}{4},
+\end{align}
+which exists (real radius) iff $k^2\ge\frac{115}{4}$
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.6\textwidth]{figs/fig1.png}
-    \caption{Point C dividing AB externally in ratio 3:1}
-    \label{fig:division}
+    \includegraphics[width=0.6\textwidth]{figs/fig3.png}
+    \caption{locus of point p}
+    \label{fig:sphere-locus}
 \end{figure}
 \end{document}
