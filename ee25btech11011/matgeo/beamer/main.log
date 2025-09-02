@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.16)  1 SEP 2025 00:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.16)  2 SEP 2025 20:28
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
@@ -1399,7 +1399,7 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
@@ -1413,13 +1413,11 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 )
-runsystem(uname -s > "main.w18")...executed.
 
- (./main.w18)
-runsystem(rm -- "main.w18")...executed.
+Package ifplatform Warning: 
+    shell escape is disabled, so I can only detect \ifwindows.
 
-)
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
 \xs_counta=\count400
 \xs_countb=\count401
@@ -1450,9 +1448,19 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@every@listing=\toks61
 \c@listing=\count405
 )
-runsystem(mkdir -p _minted-main)...executed.
+runsystem(mkdir -p _minted-main)...disabled (restricted).
 
 
+
+! Package minted Error: You must invoke LaTeX with the -shell-escape flag.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \RequirePackage{minted}[2021/12/24]
+                                        
+? 
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
 Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
@@ -1491,13 +1499,22 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
-runsystem(command -v pygmentize && touch main.aex)...executed.
+runsystem(command -v pygmentize && touch main.aex)...disabled (restricted).
 
-runsystem(rm main.aex)...executed.
 
+
+! Package minted Error: You must have `pygmentize' installed to use this packag
+e.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \begin{document}
+                     
+? 
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
 42.
-
 (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1746,44 +1763,48 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
  [2
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-mathsy.enc}] [3
+dvips/lm/lm-mathsy.enc}]
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 74.
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <8> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 74.
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 74.
+ [3
 
 ] [4
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}]
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}] [5
+
+]
 \openout4 = `main.vrb'.
 
- (./main.vrb
+
+(./main.vrb
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
 3.
-
-(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+ (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ))
-Overfull \vbox (4.99222pt too high) detected at line 122
+Overfull \vbox (16.99222pt too high) detected at line 135
  []
 
-[5
+[6
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [6
+ (./main.vrb)
+Overfull \vbox (28.99222pt too high) detected at line 159
+ []
+
+[7
 
 ]
 \openout4 = `main.vrb'.
 
-
-(./main.vrb) [7
-
-]
-\openout4 = `main.vrb'.
-
- (./main.vrb
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-))
-Overfull \vbox (4.99222pt too high) detected at line 183
+ (./main.vrb)
+Overfull \vbox (16.99222pt too high) detected at line 183
  []
 
 [8
@@ -1791,46 +1812,52 @@ Overfull \vbox (4.99222pt too high) detected at line 183
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [9
+ (./main.vrb)
+Overfull \vbox (16.99222pt too high) detected at line 204
+ []
+
+[9
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-6.
- (/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-))
-[10
+ (./main.vrb (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)) [10
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
+]
 \openout4 = `main.vrb'.
 
  (./main.vrb)
-Overfull \vbox (16.99222pt too high) detected at line 245
+Overfull \vbox (16.99222pt too high) detected at line 252
  []
 
 [11
 
 ]
+\openout4 = `main.vrb'.
 
-LaTeX Warning: File `beamer/figs/fig3.png' not found on input line 253.
-
-
-! Package pdftex.def Error: File `beamer/figs/fig3.png' not found: using draft 
-setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.253 \end{frame}
-                 
-? 
-[12
+ (./main.vrb) [12
 
 ]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [13
+
+]
+\openout4 = `main.vrb'.
+
+ (./main.vrb) [14
+
+]
+<figs/fig2.png, id=530, 462.528pt x 346.896pt>
+File: figs/fig2.png Graphic file (type png)
+<use figs/fig2.png>
+Package pdftex.def Info: figs/fig2.png  used on input line 320.
+(pdftex.def)             Requested size: 188.26346pt x 141.19609pt.
+ [15
+
+ <./figs/fig2.png>]
 \tf@nav=\write8
 \openout8 = `main.nav'.
 
@@ -1856,23 +1883,25 @@ Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 57177 strings out of 476106
- 1361049 string characters out of 5793933
- 2371934 words of memory out of 5000000
- 78172 multiletter control sequences out of 15000+600000
- 594323 words of font info for 76 fonts, out of 8000000 for 9000
+ 57146 strings out of 476106
+ 1359702 string characters out of 5793933
+ 2436725 words of memory out of 5000000
+ 78138 multiletter control sequences out of 15000+600000
+ 602163 words of font info for 78 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 128i,15n,123p,1172b,1884s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,123p,1172b,1757s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmtt10.pfb>
-Output written on main.pdf (12 pages, 169833 bytes).
+ublic/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/txfonts/txsyb.pfb>
+Output written on main.pdf (15 pages, 279160 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
- 395 compressed objects within 4 object streams
- 25 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 619 PDF objects out of 1000 (max. 8388607)
+ 485 compressed objects within 5 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 390 words of extra memory for PDF output out of 10000 (max. 10000000)
 

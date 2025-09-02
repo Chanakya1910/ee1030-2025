@@ -56,56 +56,66 @@
 Find the equation of the set of the points $P$ such that its distances 
 from the points $A(3,4,-5)$ and $B(-2,1,4)$ are equal.\\
 
-\textbf{Solution}:\\
+\textbf{Solution:} \\
+
+Let the required point be denoted by the vector $\Vec{X}\in\mathbb{R}^3$.  
+The condition that $\Vec{X}$ is equidistant from $\Vec{A}$ and $\Vec{B}$ can be written using the norm (distance) as
 \begin{align}
-\text{Let }A=(3,4,-5),\quad B=(-2,1,4),\quad P=(x,y,z).
+\lVert \Vec{X} - \Vec{A} \rVert = \lVert \Vec{X} - \Vec{B} \rVert.
 \end{align}
 
-Using vector notation $\|\cdot\|$ for Euclidean norm,
-
+Squaring both sides (to remove the square root) gives
 \begin{align}
-\|P-A\|^2+\|P-B\|^2=2k^2.
+\lVert \Vec{X} - \Vec{A} \rVert^2 = \lVert \Vec{X} - \Vec{B} \rVert^2.
 \end{align}
 
-Write $M=\dfrac{A+B}{2}$ (the midpoint of $AB$).\\
-
-Using the identity
+Using $\lVert \Vec{u}\rVert^2 = \Vec{u}^T\Vec{u}$, expand both sides:
 \begin{align}
-\|P-A\|^2+\|P-B\|^2=2\|P-M\|^2+2\|A-M\|^2,
+(\Vec{X}-\Vec{A})^T(\Vec{X}-\Vec{A}) &= (\Vec{X}-\Vec{B})^T(\Vec{X}-\Vec{B}).
 \end{align}
 
-the condition becomes
+Expanding the products yields
 \begin{align}
-2\|P-M\|^2+2\|A-M\|^2=2k^2\\
-\|P-M\|^2=k^2-\|A-M\|^2
-\end{align}
-Now compute $M$ and $\|A-M\|^2$:
-
-\begin{align}
-M=\frac{A+B}{2}=\left(\frac{3+(-2)}{2},\frac{4+1}{2},\frac{-5+4}{2}\right)
-=\left(\frac{1}{2},\frac{5}{2},-\frac{1}{2}\right),
+\Vec{X}^T\Vec{X} - 2\Vec{A}^T\Vec{X} + \Vec{A}^T\Vec{A}
+&= \Vec{X}^T\Vec{X} - 2\Vec{B}^T\Vec{X} + \Vec{B}^T\Vec{B}.
 \end{align}
 
+The $\Vec{X}^T\Vec{X}$ terms cancel, leaving a linear equation in $\Vec{X}$:
 \begin{align}
-AB=B-A=(-5,-3,9),\\
-\|AB\|^2=25+9+81=115,
+-2\Vec{A}^T\Vec{X} + \Vec{A}^T\Vec{A} &= -2\Vec{B}^T\Vec{X} + \Vec{B}^T\Vec{B}.
 \end{align}
 
+Rearrange to isolate the inner product with $\Vec{X}$:
 \begin{align}
-\|A-M\|^2=\frac{\|AB\|^2}{4}=\frac{115}{4}.
+2(\Vec{B}-\Vec{A})^T \Vec{X} &= \Vec{B}^T\Vec{B} - \Vec{A}^T\Vec{A}.
 \end{align}
 
-Hence the locus of $P$ is the sphere with centre $M$ and radius
-$\sqrt{k^2-\tfrac{115}{4}}$. Its equation is
+Now compute the two vector/scalar pieces on the right:
+
 \begin{align}
-\left(x-\tfrac12\right)^2+\left(y-\tfrac52\right)^2+\left(z+\tfrac12\right)^2
-= k^2-\frac{115}{4},
+\Vec{B}-\Vec{A} &= \myvec{-2\\1\\4} - \myvec{3\\4\\-5} = \myvec{-5\\-3\\9}, \\[6pt]
+\Vec{B}^T\Vec{B} &= (-2)^2 + 1^2 + 4^2 = 21, \\[2pt]
+\Vec{A}^T\Vec{A} &= 3^2 + 4^2 + (-5)^2 = 50.
 \end{align}
-which exists (real radius) iff $k^2\ge\frac{115}{4}$
-\begin{figure}[h!]
+
+Substitute these values into the linear equation:
+\begin{align}
+2\myvec{-5 & -3 & 9}\,\Vec{X} &= 21 - 50 = -29.
+\end{align}
+
+Simplify the left-hand side:
+\begin{align}
+\myvec{-10 & -6 & 18}\,\Vec{X} &= -29.
+\end{align}
+
+Hence the equation of the plane is given by:
+$\boxed{\;\myvec{-10 & -6 & 18}\,\Vec{X} = -29\;}$
+
+\begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{figs/fig3.png}
-    \caption{locus of point p}
-    \label{fig:sphere-locus}
+    \includegraphics[height=0.5\textheight, keepaspectratio]{figs/fig2.png}
+    \label{figure_1}
 \end{figure}
+
 \end{document}
+
