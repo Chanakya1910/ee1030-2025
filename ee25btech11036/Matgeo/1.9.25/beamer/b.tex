@@ -92,76 +92,84 @@
 %------------------- Frame 1 -------------------%
 
 
-
-
-
-
-
-
-% Question Slide
+%---------------------------------------------------
 \begin{frame}{Question}
-If the point $P(x,y)$ is equidistant from 
+\textbf{Question 1.9.25:}  
+If the point $P(x,y)$ is equidistant from $A(a+b, b-a)$ and $B(a-b, a+b)$,  
+prove that
 \begin{align*}
-A(a+b, b-a) \quad \text{and} \quad B(a-b, a+b),
-\end{align*}
-prove that 
-\begin{align*}
-bx = ay.
+    bx = ay
 \end{align*}
 \end{frame}
 
-% Given Data
-\begin{frame}{1. Given Data}
+%---------------------------------------------------
+\begin{frame}{Given Data}
+Define
 \begin{align}
-\vec{A} &= \myvec{1 & 1 \\ -1 & 1}\myvec{a \\ b}, \\
-\vec{B} &= \myvec{1 & -1 \\ 1 & 1}\myvec{a \\ b}, \\
+\vec{z} &= \myvec{a \\ b}. 
+\end{align}
+
+Then
+\begin{align}
+\vec{A} &= \myvec{1 & 1 \\ -1 & 1}\vec{z}, \\
+\vec{B} &= \myvec{1 & -1 \\ 1 & 1}\vec{z}, \\
 \vec{P} &= \myvec{x \\ y}.
 \end{align}
 
 Notice that
 \begin{align}
-\vec{B} 
-= \myvec{1 & -1 \\ 1 & 1} 
+\myvec{1 & -1 \\ 1 & 1} 
 = \myvec{1 & 1 \\ -1 & 1}^T 
-= \vec{A}^T.
+\quad \Rightarrow \quad \vec{B} = \vec{A}^T \vec{z}.
 \end{align}
 \end{frame}
 
-% Equidistant condition
-\begin{frame}{2. Equidistant Condition}
+%---------------------------------------------------
+\begin{frame}{Equidistant Condition}
 \begin{align}
 \norm{\vec{P}-\vec{A}}^2 &= \norm{\vec{P}-\vec{B}}^2 \\
 (\vec{P}-\vec{A})^T(\vec{P}-\vec{A}) &= (\vec{P}-\vec{A}^T)^T(\vec{P}-\vec{A}^T)
 \end{align}
 \end{frame}
 
-% Simplification
-\begin{frame}{3. Simplification using $B=A^T$}
+%---------------------------------------------------
+\begin{frame}{Simplification}
+Using $B=A^T$,
 \begin{align}
 2(\vec{A}^T - \vec{A})^T \vec{P} &= \vec{A}^{T}\vec{A}^{T} - \vec{A}^T\vec{A}.
 \end{align}
 
-But since $\vec{A}^T\vec{A}$ is symmetric,
-\begin{align*}
+But since $\vec{A}^T\vec{A}$ is symmetric,  
+\begin{align}
 \vec{A}^{T}\vec{A}^{T} - \vec{A}^T\vec{A} = 0.
-\end{align*}
+\end{align}
 
-Hence,
-\begin{align*}
+Hence
+\begin{align}
 (\vec{A}^T - \vec{A})^T \vec{P} = 0.
-\end{align*}
+\end{align}
 \end{frame}
 
-% Final Result
-\begin{frame}{4. Final Result}
+%---------------------------------------------------
+\begin{frame}{Final Result}
 Expanding,
 \begin{align}
 (\vec{B}-\vec{A})^T\vec{P} 
-&= \Bigg(\myvec{0 & -2 \\ 2 & 0}\myvec{a \\ b}\Bigg)^T \myvec{x \\ y} \\
-&= -2bx + 2ay = 0 \\
+&= \Bigg(\myvec{0 & -2 \\ 2 & 0}\vec{z}\Bigg)^T \vec{P}, \\
+&= -2bx + 2ay = 0, \\
 \Rightarrow \quad bx &= ay
 \end{align}
 \end{frame}
+
+
+
+
+
+
+
+
+
+
 
 
 
