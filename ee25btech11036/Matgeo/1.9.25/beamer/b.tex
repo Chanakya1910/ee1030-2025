@@ -94,69 +94,78 @@
 
 
 
-% Question
+
+
+
+
+% Question Slide
 \begin{frame}{Question}
 If the point $P(x,y)$ is equidistant from 
 \begin{align*}
-    A(a+b, b-a), \quad B(a-b, a+b),
+A(a+b, b-a) \quad \text{and} \quad B(a-b, a+b),
 \end{align*}
 prove that 
 \begin{align*}
-    bx = ay.
+bx = ay.
 \end{align*}
 \end{frame}
 
-% Step 1
+% Given Data
 \begin{frame}{1. Given Data}
 \begin{align}
-\vec{A} &= \myvec{a+b \\ b-a}, \quad
-\vec{B} = \myvec{a-b \\ a+b}, \quad
-\vec{P} = \myvec{x \\ y}
+\vec{A} &= \myvec{1 & 1 \\ -1 & 1}\myvec{a \\ b}, \\
+\vec{B} &= \myvec{1 & -1 \\ 1 & 1}\myvec{a \\ b}, \\
+\vec{P} &= \myvec{x \\ y}.
 \end{align}
-Equivalently,
+
+Notice that
 \begin{align}
-\vec{A} &= \myvec{1 & 1 \\ -1 & 1}\myvec{a \\ b}, \quad
-\vec{B} = \myvec{1 & -1 \\ 1 & 1}\myvec{a \\ b}.
+\vec{B} 
+= \myvec{1 & -1 \\ 1 & 1} 
+= \myvec{1 & 1 \\ -1 & 1}^T 
+= \vec{A}^T.
 \end{align}
 \end{frame}
 
-% Step 2
+% Equidistant condition
 \begin{frame}{2. Equidistant Condition}
 \begin{align}
 \norm{\vec{P}-\vec{A}}^2 &= \norm{\vec{P}-\vec{B}}^2 \\
-(\vec{P}-\vec{A})^\top(\vec{P}-\vec{A}) &= (\vec{P}-\vec{B})^\top(\vec{P}-\vec{B})
-\end{align}
-Simplifying,
-\begin{align}
-2(\vec{B}-\vec{A})^\top \vec{P} &= \vec{B}^\top \vec{B} - \vec{A}^\top \vec{A}
+(\vec{P}-\vec{A})^T(\vec{P}-\vec{A}) &= (\vec{P}-\vec{A}^T)^T(\vec{P}-\vec{A}^T)
 \end{align}
 \end{frame}
 
-% Step 3
-\begin{frame}{3. Simplification}
+% Simplification
+\begin{frame}{3. Simplification using $B=A^T$}
 \begin{align}
-\vec{B}-\vec{A} &= \myvec{0 & -2 \\ 2 & 0}\myvec{a \\ b} \\
-\vec{B}^\top \vec{B} - \vec{A}^\top \vec{A} &= 0
+2(\vec{A}^T - \vec{A})^T \vec{P} &= \vec{A}^{T}\vec{A}^{T} - \vec{A}^T\vec{A}.
 \end{align}
-Thus,
-\begin{align}
-(\vec{B}-\vec{A})^\top \vec{P} = 0
-\end{align}
+
+But since $\vec{A}^T\vec{A}$ is symmetric,
+\begin{align*}
+\vec{A}^{T}\vec{A}^{T} - \vec{A}^T\vec{A} = 0.
+\end{align*}
+
+Hence,
+\begin{align*}
+(\vec{A}^T - \vec{A})^T \vec{P} = 0.
+\end{align*}
 \end{frame}
 
-% Step 4
+% Final Result
 \begin{frame}{4. Final Result}
 Expanding,
 \begin{align}
-(\vec{B}-\vec{A})^\top \vec{P}
-&= \myvec{-2b & 2a}\myvec{x \\ y} \\
+(\vec{B}-\vec{A})^T\vec{P} 
+&= \Bigg(\myvec{0 & -2 \\ 2 & 0}\myvec{a \\ b}\Bigg)^T \myvec{x \\ y} \\
 &= -2bx + 2ay = 0 \\
 \Rightarrow \quad bx &= ay
 \end{align}
-\begin{align*}
-    \boxed{bx = ay}
-\end{align*}
 \end{frame}
+
+
+
+
 
 
 \begin{frame}{Plot by shared output}
@@ -272,8 +281,8 @@ plt.xlabel("x")
 \begin{frame}[fragile]\frametitle{Python Code through shared output}
 \begin{lstlisting}
 plt.ylabel("y")
-plt.axhline(0, color='black', linewidth=0.5)
-plt.axvline(0, color='black', linewidth=0.5)
+plt.axhline(0, color='black', columnwidth=0.5)
+plt.axvline(0, color='black', columnwidth=0.5)
 plt.grid(True, linestyle='--', alpha=0.6)
 plt.legend()
 plt.axis("equal")

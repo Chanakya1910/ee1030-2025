@@ -1,5 +1,3 @@
-\let\negmedspace\undefined
-\let\negthickspace\undefined
 \documentclass[journal]{IEEEtran}
 \usepackage[a5paper, margin=10mm, onecolumn]{geometry}
 \usepackage{lmodern}
@@ -30,7 +28,6 @@
 \author{EE25BTECH11036 - M Chanakya Srinivas}
 \maketitle
 
-
 \renewcommand{\thetable}{\theenumi}
 \setlength{\intextsep}{10pt}
 
@@ -46,75 +43,47 @@ prove that $bx = ay$.
 \medskip
 \textbf{1. Given Data}
 \begin{align}
-\vec{A} &= \myvec{a+b \\ b-a}, \quad
-\vec{B} = \myvec{a-b \\ a+b}, \quad
-\vec{P} = \myvec{x \\ y} \label{eq:data}
+\vec{A} &= \myvec{1 & 1 \\ -1 & 1}\myvec{a \\ b}, \\
+\vec{B} &= \myvec{1 & -1 \\ 1 & 1}\myvec{a \\ b}, \\
+\vec{P} &= \myvec{x \\ y}.
 \end{align}
 
-Equivalently,
+Notice that
 \begin{align}
-\vec{A} &= \myvec{1 & 1 \\ -1 & 1}\myvec{a \\ b}, \\
-\vec{B} &= \myvec{1 & -1 \\ 1 & 1}\myvec{a \\ b}.
+\vec{B} = \myvec{1 & -1 \\ 1 & 1} 
+= \myvec{1 & 1 \\ -1 & 1}^T = \vec{A}^T.
 \end{align}
 
 \medskip
 \textbf{2. Equidistant Condition}
 \begin{align}
-\norm{\vec{P}-\vec{A}}^2 &= \norm{\vec{P}-\vec{B}}^2 \label{eq:eqdist} \\[6pt]
-(\vec{P}-\vec{A})^T(\vec{P}-\vec{A}) &= (\vec{P}-\vec{B})^T(\vec{P}-\vec{B}) \\
-\vec{P}^T\vec{P} - 2\vec{A}^T\vec{P} + \vec{A}^T\vec{A} &= 
-\vec{P}^T\vec{P} - 2\vec{B}^T\vec{P} + \vec{B}^T\vec{B}
+\norm{\vec{P}-\vec{A}}^2 &= \norm{\vec{P}-\vec{B}}^2 \\
+(\vec{P}-\vec{A})^T(\vec{P}-\vec{A}) &= (\vec{P}-\vec{A}^T)^T(\vec{P}-\vec{A}^T)
 \end{align}
 
 \medskip
-\textbf{3. Simplification in Matrix Form}
+\textbf{3. Simplification using $B=A^T$}
 \begin{align}
-2(\vec{B}-\vec{A})^T\vec{P} &= \vec{B}^T\vec{B} - \vec{A}^T\vec{A} \label{eq:step1}
+2(\vec{A}^T - \vec{A})^T \vec{P} &= \vec{A}^{T}\vec{A}^{T} - \vec{A}^T\vec{A}.
 \end{align}
 
-Now,
+But since $\vec{A}^T\vec{A}$ is symmetric,  
 \begin{align}
-\vec{B}-\vec{A} &= 
-\myvec{1 & -1 \\ 1 & 1}\myvec{a \\ b} -
-\myvec{1 & 1 \\ -1 & 1}\myvec{a \\ b} \\[4pt]
-&= \myvec{0 & -2 \\ 2 & 0}\myvec{a \\ b}. \label{eq:BA}
+\vec{A}^{T}\vec{A}^{T} - \vec{A}^T\vec{A} = 0.
 \end{align}
 
-Also,
+Hence
 \begin{align}
-\vec{A}^T\vec{A} &= \myvec{a & b}
-\myvec{1 & 1 \\ -1 & 1}^T
-\myvec{1 & 1 \\ -1 & 1}
-\myvec{a \\ b}, \\[6pt]
-\vec{B}^T\vec{B} &= \myvec{a & b}
-\myvec{1 & -1 \\ 1 & 1}^T
-\myvec{1 & -1 \\ 1 & 1}
-\myvec{a \\ b}.
-\end{align}
-
-On simplification,
-\begin{align}
-\vec{B}^T\vec{B} - \vec{A}^T\vec{A} = 0. \label{eq:rhs}
-\end{align}
-
-Hence from \eqref{eq:step1},
-\begin{align}
-(\vec{B}-\vec{A})^T\vec{P} = 0. \label{eq:matrix-final}
+(\vec{A}^T - \vec{A})^T \vec{P} = 0.
 \end{align}
 
 \medskip
 \textbf{4. Final Result}
-Thus, the locus of $\vec{P}$ is the line
-\begin{align}
-\boxed{(\vec{B}-\vec{A})^T\vec{P} = 0}
-\end{align}
-
 Expanding,
 \begin{align}
 (\vec{B}-\vec{A})^T\vec{P} 
-&= \Bigg(\myvec{0 & -2 \\ 2 & 0}\myvec{a \\ b}\Bigg)^T \myvec{x \\ y} \\[6pt]
-&= \myvec{-2b & 2a}\myvec{x \\ y} \\[6pt]
-&= -2bx + 2ay = 0 \\[6pt]
+&= \Bigg(\myvec{0 & -2 \\ 2 & 0}\myvec{a \\ b}\Bigg)^T \myvec{x \\ y} \\
+&= -2bx + 2ay = 0 \\
 \Rightarrow \quad bx &= ay
 \end{align}
 
@@ -122,13 +91,12 @@ Expanding,
     \centering
     \includegraphics[width=0.9\linewidth]{figs/Fig1.png}
     \caption{}
-    \label{fig:placeholder}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{figs/fig2.png}
     \caption{}
-    \label{fig:placeholder}
 \end{figure}
+
 \end{document}
