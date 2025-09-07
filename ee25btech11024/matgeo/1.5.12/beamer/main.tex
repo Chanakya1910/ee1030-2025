@@ -61,17 +61,18 @@ Thus, the matrix is
 M = \myvec{2 & 9 \\ y-10 & -18}
 \end{align}
 
-Perform the row operation: $R_2 \leftarrow R_2 + 2R_1$  which results in
-
-\begin{align}
-\myvec{2 & 9 \\ y-6 & 0}
-\end{align}
-
+Perform the row operations: $R_1 \leftarrow R_1/2$ and $R_2 \leftarrow R_2 - R_1(y-10)$  which results in
 
 \end{frame}
 
 % Solution using Rank Criterion (Slide 2)
-\begin{frame}{Solution: Using the Criterion}
+\begin{frame}{Solution: }
+
+\begin{align}
+\myvec{1 & 9/2 \\ 0 & -9/2(y-6)}
+\end{align}
+
+If y is not equal to 6, then we perform $R_2 \leftarrow R_2/(-9/2(y-6))$ to get an identity matrix. But then the rank will be 2 \\
 For the rank to be 1, the second row must be all zeros:
 
 $
@@ -95,26 +96,23 @@ Compute the numerator:
 (\vec{A}-\vec{P})^\top (\vec{P}-\vec{B}) = (-2)(-7) + (4)(14) = 14 + 56 = 70
 \end{align}
 
+\end{frame}
+
+% Solution using Rank Criterion (Slide 3)
+\begin{frame}{Solution:}
 Compute the denominator:
 
 \begin{align}
 \|\vec{P}-\vec{B}\|^2 = (-7)^2 + (14)^2 = 49 + 196 = 245
 \end{align}
 
-\end{frame}
-
-% Solution using Rank Criterion (Slide 3)
-\begin{frame}{Solution: Final Result}
 Thus,
 
 \begin{align}
 k = \frac{70}{245} = \frac{2}{7}
 \end{align}
 
----
-
-\section*{Final Answer:}
-
+Therefore,
 \begin{align}
 \boxed{y = 6, \quad k = \frac{2}{7}}
 \end{align}  

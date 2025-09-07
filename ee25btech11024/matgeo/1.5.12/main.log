@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Termux) (preloaded format=pdflatex 2025.8.17)  6 SEP 2025 02:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Termux) (preloaded format=pdflatex 2025.8.17)  7 SEP 2025 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1815,16 +1815,16 @@ and I'll forget about whatever was undefined.
 updmap/pdftex.map}{/data/data/com.termux/files/usr/share/texlive/2025/texmf-dis
 t/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 107.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 114.
 
 
 LaTeX Warning: Reference `fig:line_division' on page 2 undefined on input line 
-107.
+114.
 
-<figs/fig.jpg, id=50, 602.25pt x 602.25pt>
+<figs/fig.jpg, id=49, 602.25pt x 602.25pt>
 File: figs/fig.jpg Graphic file (type jpg)
 <use figs/fig.jpg>
-Package pdftex.def Info: figs/fig.jpg  used on input line 115.
+Package pdftex.def Info: figs/fig.jpg  used on input line 122.
 (pdftex.def)             Requested size: 317.07614pt x 317.08656pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1857,7 +1857,7 @@ Package rerunfilecheck Info: Checksums for `main.out':
 Here is how much of TeX's memory you used:
  53783 strings out of 467800
  1302942 string characters out of 5417814
- 1895191 words of memory out of 5000000
+ 1894192 words of memory out of 5000000
  81628 multiletter control sequences out of 15000+600000
  668892 words of font info for 148 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1871,7 +1871,7 @@ pfb></data/data/com.termux/files/usr/share/texlive/2025/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></data/data/com.termux/files/usr/share/texlive/2025/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></data/data/com.termux/files/usr/share/te
 xlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 80249 bytes).
+Output written on main.pdf (3 pages, 81022 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream
