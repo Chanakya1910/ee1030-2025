@@ -1,77 +1,40 @@
-
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 \documentclass[journal]{IEEEtran}
 \usepackage[a5paper, margin=10mm, onecolumn]{geometry}
-\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{lmodern}
 
-\setlength{\headheight}{1cm} % Set the height of the header box
-\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\setlength{\headheight}{1cm}
+\setlength{\headsep}{0mm}
 
 \usepackage{gvv-book}
 \usepackage{gvv}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
-\usepackage{algorithmic}
 \usepackage{graphicx}
 \graphicspath{{./figs/}}
-\usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{txfonts}
-\usepackage{listings}
 \usepackage{enumitem}
 \usepackage{mathtools}
-\usepackage{gensymb}
-\usepackage{comment}
-\usepackage[breaklinks=true]{hyperref}
-\usepackage{tkz-euclide} 
-\usepackage{listings}
-\usepackage{gvv}                                        
-\def\inputGnumericTable{}                                 
-\usepackage[latin1]{inputenc}                                
-\usepackage{color}                                            
-\usepackage{array}                                            
-\usepackage{longtable}                                       
-\usepackage{calc}                                             
-\usepackage{multirow}                                         
-\usepackage{hhline}                                           
-\usepackage{ifthen}                                           
-\usepackage{lscape}
-\usepackage{circuitikz}
-\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
-text width=4em, text centered, rounded corners, minimum height=3em]
-\tikzstyle{sum} = [draw, fill=blue!10, circle, minimum size=1cm, node distance=1.5cm]
-\tikzstyle{input} = [coordinate]
-\tikzstyle{output} = [coordinate]
-
-
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
 
 \begin{document}
-	
-	\bibliographystyle{IEEEtran}
-	\vspace{3cm}
-	
-	\title{1.9.25}
-	\author{EE25BTECH11036 - M Chanakya Srinivas}
-	\maketitle
-	% \newpage
-	% \bigskip
-	{\let\newpage\relax\maketitle}
-	
-	\renewcommand{\thefigure}{\theenumi}
-	\renewcommand{\thetable}{\theenumi}
-	\setlength{\intextsep}{10pt} % Space between text and floats
-	
-	
-\renewcommand\theequation{\arabic{equation}}
-\renewcommand\thefigure{\arabic{figure}}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{1.9.25}
+\author{EE25BTECH11036 - M Chanakya Srinivas}
+\maketitle
+
+
 \renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt}
 
-
-
-
-
-
+\renewcommand\theequation{\arabic{equation}}
 
 \textbf{Question 1.9.25:}  
 If the point $P(x,y)$ is equidistant from $A(a+b, b-a)$ and $B(a-b, a+b)$,  
@@ -83,53 +46,88 @@ prove that $bx = ay$.
 \medskip
 \textbf{1. Given Data}
 \begin{align}
-A &= \myvec{a+b \\ b-a}, \quad 
-B = \myvec{a-b \\ a+b}, \quad 
-P = \myvec{x \\ y} \label{eq:def}
+\vec{A} &= \myvec{a+b \\ b-a}, \quad
+\vec{B} = \myvec{a-b \\ a+b}, \quad
+\vec{P} = \myvec{x \\ y} \label{eq:data}
+\end{align}
+
+Equivalently,
+\begin{align}
+\vec{A} &= \myvec{1 & 1 \\ -1 & 1}\myvec{a \\ b}, \\
+\vec{B} &= \myvec{1 & -1 \\ 1 & 1}\myvec{a \\ b}.
 \end{align}
 
 \medskip
 \textbf{2. Equidistant Condition}
 \begin{align}
-\|P-A\|^2 &= \|P-B\|^2 \label{eq:eqdist} \\[6pt]
-(P-A)^T(P-A) &= (P-B)^T(P-B) \label{eq:expand1} \\[6pt]
-P^TP - 2A^TP + A^TA &= P^TP - 2B^TP + B^TB \label{eq:expand2}
+\norm{\vec{P}-\vec{A}}^2 &= \norm{\vec{P}-\vec{B}}^2 \label{eq:eqdist} \\[6pt]
+(\vec{P}-\vec{A})^T(\vec{P}-\vec{A}) &= (\vec{P}-\vec{B})^T(\vec{P}-\vec{B}) \\
+\vec{P}^T\vec{P} - 2\vec{A}^T\vec{P} + \vec{A}^T\vec{A} &= 
+\vec{P}^T\vec{P} - 2\vec{B}^T\vec{P} + \vec{B}^T\vec{B}
 \end{align}
 
 \medskip
-\textbf{3. Simplification}
+\textbf{3. Simplification in Matrix Form}
 \begin{align}
-2(B-A)^TP &= B^TB - A^TA \label{eq:step1} \\[6pt]
-B-A &= \myvec{-2b \\ 2a} = 2\myvec{-b \\ a} \label{eq:diff} \\[6pt]
-A^TA &= (a+b)^2 + (b-a)^2 = 2a^2 + 2b^2 \label{eq:ATA} \\[6pt]
-B^TB &= (a-b)^2 + (a+b)^2 = 2a^2 + 2b^2 \label{eq:BTB} \\[6pt]
-B^TB - A^TA &= 0 \label{eq:rhs0} \\[6pt]
-(B-A)^TP &= 0 \label{eq:lhs} \\[6pt]
-\myvec{-2b & 2a}\myvec{x \\ y} &= 0 \label{eq:prod}
+2(\vec{B}-\vec{A})^T\vec{P} &= \vec{B}^T\vec{B} - \vec{A}^T\vec{A} \label{eq:step1}
+\end{align}
+
+Now,
+\begin{align}
+\vec{B}-\vec{A} &= 
+\myvec{1 & -1 \\ 1 & 1}\myvec{a \\ b} -
+\myvec{1 & 1 \\ -1 & 1}\myvec{a \\ b} \\[4pt]
+&= \myvec{0 & -2 \\ 2 & 0}\myvec{a \\ b}. \label{eq:BA}
+\end{align}
+
+Also,
+\begin{align}
+\vec{A}^T\vec{A} &= \myvec{a & b}
+\myvec{1 & 1 \\ -1 & 1}^T
+\myvec{1 & 1 \\ -1 & 1}
+\myvec{a \\ b}, \\[6pt]
+\vec{B}^T\vec{B} &= \myvec{a & b}
+\myvec{1 & -1 \\ 1 & 1}^T
+\myvec{1 & -1 \\ 1 & 1}
+\myvec{a \\ b}.
+\end{align}
+
+On simplification,
+\begin{align}
+\vec{B}^T\vec{B} - \vec{A}^T\vec{A} = 0. \label{eq:rhs}
+\end{align}
+
+Hence from \eqref{eq:step1},
+\begin{align}
+(\vec{B}-\vec{A})^T\vec{P} = 0. \label{eq:matrix-final}
 \end{align}
 
 \medskip
 \textbf{4. Final Result}
+Thus, the locus of $\vec{P}$ is the line
 \begin{align}
--2bx + 2ay &= 0 
-\quad \Rightarrow \quad 
-\boxed{bx = ay} \label{eq:final}
+\boxed{(\vec{B}-\vec{A})^T\vec{P} = 0}
 \end{align}
 
-\noindent
-Thus, the locus of $P$ is the line
-\begin{align*}
-    n^Tx = 0, \quad n = \myvec{-b \\ a}.
-\end{align*}
-\begin{figure}
-       \centering
-    \includegraphics[width=0.6\columnwidth]{figs/Figure1.png}
+Expanding,
+\begin{align}
+(\vec{B}-\vec{A})^T\vec{P} 
+&= \Bigg(\myvec{0 & -2 \\ 2 & 0}\myvec{a \\ b}\Bigg)^T \myvec{x \\ y} \\[6pt]
+&= \myvec{-2b & 2a}\myvec{x \\ y} \\[6pt]
+&= -2bx + 2ay = 0 \\[6pt]
+\Rightarrow \quad bx &= ay
+\end{align}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{figs/Fig1.png}
     \caption{}
     \label{fig:placeholder}
 \end{figure}
-\begin{figure}
+
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\columnwidth]{figs/Figure_4.png}
+    \includegraphics[width=0.9\linewidth]{figs/fig2.png}
     \caption{}
     \label{fig:placeholder}
 \end{figure}

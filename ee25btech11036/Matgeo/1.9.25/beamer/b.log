@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.8.29)  7 SEP 2025 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.8.29)  7 SEP 2025 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1646,66 +1646,66 @@ No file b.nav.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-rm.enc}]
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-02.
+07.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-102.
+107.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-102.
+107.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 102.
+(Font)              <10.95> on input line 107.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 102.
+(Font)              <8> on input line 107.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 102.
+(Font)              <6> on input line 107.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
-02.
+07.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
-02.
+07.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 1
-02.
+07.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
-02.
+07.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-02.
+07.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 102.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 107.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 102.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 107.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 102.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 107.
 
 
 
@@ -1713,6 +1713,16 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-mathsy.enc}]
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 121.
+
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <8> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 121.
+
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 121.
+
+
 
 [3
 
@@ -1729,73 +1739,250 @@ dvips/lm/lm-mathsy.enc}]
 [6
 
 ]
-<figs/Figure1.png, id=211, 462.528pt x 346.896pt>
-File: figs/Figure1.png Graphic file (type png)
-<use figs/Figure1.png>
-Package pdftex.def Info: figs/Figure1.png  used on input line 157.
-(pdftex.def)             Requested size: 308.06367pt x 231.05875pt.
 
-Overfull \vbox (39.53242pt too high) detected at line 157
+LaTeX Warning: File `figs/Fig1.png' not found on input line 171.
+
+
+! Package pdftex.def Error: File `figs/Fig1.png' not found: using draft setting
+.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171 \end{frame}
+                 
+? 
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
+171.
+(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Overfull \vbox (116.62242pt too high) detected at line 171
  []
 
 
 
 [7
 
- <./figs/Figure1.png>]
-<figs/Figure_4.png, id=243, 462.528pt x 346.896pt>
-File: figs/Figure_4.png Graphic file (type png)
-<use figs/Figure_4.png>
-Package pdftex.def Info: figs/Figure_4.png  used on input line 168.
-(pdftex.def)             Requested size: 308.06367pt x 231.05875pt.
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}]
+
+LaTeX Warning: File `figs/fig2.png' not found on input line 182.
+
+
+! Package pdftex.def Error: File `figs/fig2.png' not found: using draft setting
+.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{frame}
+                 
+? 
 
 pdfTeX warning (ext4): destination with the same identifier (name{fig:placehold
 er}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.168 \end{frame}
+l.182 \end{frame}
                  
-Overfull \vbox (39.53242pt too high) detected at line 168
+Overfull \vbox (116.62242pt too high) detected at line 182
  []
 
 
 
 [8
 
- <./figs/Figure_4.png>]
+]
 \openout4 = `b.vrb'.
 
  (./b.vrb
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-2.
- (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-))
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11     printf("
+                 Enter values of a, b: ");
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11     printf("Enter values of a, b: "
+                                        );
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12     scanf("
+                %lf %lf", &a, &b);
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12     scanf("%lf %lf"
+                        , &a, &b);
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14     printf("
+                 Enter point P(x,y): ");
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14     printf("Enter point P(x,y): "
+                                      );
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15     scanf("
+                %lf %lf", &x, &y);
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15     scanf("%lf %lf"
+                        , &x, &y);
+? 
+)
+Overfull \vbox (1.72923pt too high) detected at line 204
+ []
+
+
 
 [9
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}]
+]
 \openout4 = `b.vrb'.
 
  (./b.vrb
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-20.
 
-(/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-))
-Overfull \vbox (1.72923pt too high) detected at line 208
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11     printf("
+                 Matrix form condition:\n");
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11     printf("Matrix form condition:\n"
+                                          );
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12     printf("
+                 (B - A)^T P = %lf\n", dot);
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12     printf("(B - A)^T P = %lf\n"
+                                     , dot);
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15         printf("
+                     => Point lies on locus (bx = ay)\n");
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...rintf("=> Point lies on locus (bx = ay)\n"
+                                                  );
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17         printf("
+                     => Point does NOT lie on locus\n");
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 ... printf("=> Point does NOT lie on locus\n"
+                                                  );
+? 
+)
+Overfull \vbox (1.72923pt too high) detected at line 226
  []
 
 
 
 [10
 
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
+]
 \openout4 = `b.vrb'.
 
  (./b.vrb)
-Overfull \vbox (13.72923pt too high) detected at line 229
+Overfull \vbox (1.72923pt too high) detected at line 249
  []
 
 
@@ -1806,6 +1993,11 @@ Overfull \vbox (13.72923pt too high) detected at line 229
 \openout4 = `b.vrb'.
 
  (./b.vrb
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
+4.
+ (/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
 ! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
 
@@ -1813,7 +2005,28 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 plt.xlabel("
+l.19 plt.title(f"
+                 Locus from Matrix Condition\n|PA| = {dist_PA:.2f}, |PB| = {...
+
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...PA| = {dist_PA:.2f}, |PB| = {dist_PB:.2f}"
+                                                  )
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 plt.xlabel("
                  x")
 ? 
 
@@ -1823,92 +2036,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 plt.xlabel("x"
+l.20 plt.xlabel("x"
                    )
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 plt.ylabel("
-                 y")
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 plt.ylabel("y"
-                   )
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 plt.title("
-                Locus of P such that PA = PB")
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 plt.title("Locus of P such that PA = PB"
-                                             )
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14 plt.axis("
-               equal")
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14 plt.axis("equal"
-                     )
 ? 
 )
-
-[12
-
-]
-\openout4 = `b.vrb'.
-
- (./b.vrb)
-
-[13
-
-]
-\openout4 = `b.vrb'.
-
- (./b.vrb)
-Overfull \vbox (13.72923pt too high) detected at line 293
+Overfull \vbox (13.72923pt too high) detected at line 271
  []
 
 
 
-[14
+[12
 
-]
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
 \openout4 = `b.vrb'.
 
  (./b.vrb
@@ -1919,8 +2058,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7                  textcoords="
-                                 offset points",
+l.3 plt.ylabel("
+                y")
 ? 
 
 ! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
@@ -1929,11 +2068,45 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7                  textcoords="offset points"
-                                               ,
+l.3 plt.ylabel("y"
+                  )
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 plt.axis("
+              equal")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 plt.axis("equal"
+                    )
 ? 
 )
-Overfull \vbox (1.72923pt too high) detected at line 314
+
+[13
+
+]
+\openout4 = `b.vrb'.
+
+ (./b.vrb)
+
+[14
+
+]
+\openout4 = `b.vrb'.
+
+ (./b.vrb)
+Overfull \vbox (13.72923pt too high) detected at line 322
  []
 
 
@@ -1951,8 +2124,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 plt.title("
-                Locus of P such that PA = PB")
+l.9                  textcoords="
+                                 offset points",
 ? 
 
 ! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
@@ -1961,32 +2134,49 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 plt.title("Locus of P such that PA = PB"
-                                             )
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16 #plt.savefig("
-                   locus.pdf")   # if using termux
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16 #plt.savefig("locus.pdf"
-                             )   # if using termux
+l.9                  textcoords="offset points"
+                                               ,
 ? 
 )
+Overfull \vbox (13.72923pt too high) detected at line 343
+ []
+
+
 
 [16
+
+]
+\openout4 = `b.vrb'.
+
+ (./b.vrb
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 plt.title(f"
+                 Locus of P such that PA = PB\n|PA|={dist_PA:.2f}, |PB|={dis...
+
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...B\n|PA|={dist_PA:.2f}, |PB|={dist_PB:.2f}"
+                                                  )
+? 
+)
+Overfull \vbox (13.72923pt too high) detected at line 366
+ []
+
+
+
+[17
 
 ]
 \tf@nav=\write7
@@ -2017,23 +2207,24 @@ Package rerunfilecheck Info: Checksums for `b.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 59098 strings out of 475178
- 1431163 string characters out of 5766539
- 2517941 words of memory out of 5000000
- 81079 multiletter control sequences out of 15000+600000
- 592359 words of font info for 75 fonts, out of 8000000 for 9000
+ 59121 strings out of 475178
+ 1431809 string characters out of 5766539
+ 2582941 words of memory out of 5000000
+ 81109 multiletter control sequences out of 15000+600000
+ 600504 words of font info for 78 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 101i,15n,107p,1169b,1467s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,15n,107p,1169b,1461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on b.pdf (16 pages, 215331 bytes).
+ublic/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on b.pdf (17 pages, 188363 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 477 compressed objects within 5 object streams
- 46 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 572 PDF objects out of 1000 (max. 8388607)
+ 488 compressed objects within 5 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 79 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,12 +1,36 @@
 #include <stdio.h>
+#include <math.h>
 
-// Function to check if bx = ay
-// Returns 1 if true, 0 otherwise
-int check_equation(double a, double b, double x, double y) {
-    double lhs = b * x;
-    double rhs = a * y;
-    if ( (lhs - rhs) < 1e-6 && (rhs - lhs) < 1e-6 ) {
-        return 1;  // condition satisfied
-    }
-    return 0;  // not satisfied
+int main() {
+    double a, b, x, y;
+
+    // Input parameters
+    printf("Enter values of a, b: ");
+    scanf("%lf %lf", &a, &b);
+
+    printf("Enter point P(x,y): ");
+    scanf("%lf %lf", &x, &y);
+
+    // Define (B - A)
+    double BA[2];
+    BA[0] = -2 * b;
+    BA[1] =  2 * a;
+
+    // Define P
+    double P[2];
+    P[0] = x;
+    P[1] = y;
+
+    // Compute dot product (B - A)^T P
+    double dot = BA[0]*P[0] + BA[1]*P[1];
+
+    printf("Matrix form condition:\n");
+    printf("(B - A)^T P = %lf\n", dot);
+
+    if (fabs(dot) < 1e-6)
+        printf("=> Point lies on locus (bx = ay)\n");
+    else
+        printf("=> Point does NOT lie on locus\n");
+
+    return 0;
 }
