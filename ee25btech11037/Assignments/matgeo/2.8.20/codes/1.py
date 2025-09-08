@@ -1,0 +1,15 @@
+import ctypes
+import os
+
+# Load the shared library
+
+lib = ctypes.CDLL('./mat.so')
+
+# Define the argument types for the C function
+lib.is_perpendicular.argtypes = [ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double]
+# Define the return type for the C function
+lib.is_perpendicular.restype = ctypes.c_int
+
+def check_perpendicular(p, r, p_prime, r_prime):
+    result = lib.is_perpendicular(p, r, p_prime, r_prime)
+    return bool(result)
