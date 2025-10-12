@@ -91,121 +91,105 @@
 
 
 
-\begin{frame}{Problem}
-Find \(\lambda\) so that
-\[
-\frac{x-5}{5\lambda+2}=\frac{2-y}{5}=\frac{1-z}{-1},\qquad
-\frac{x}{1}=\frac{y+\tfrac12}{2\lambda}=\frac{z-1}{3}
-\]
-are perpendicular; determine intersection condition.
+\begin{frame}{Question}
+Find the value of $\lambda$ for which the following lines are perpendicular to each other. Hence determine whether the lines intersect or not.
+\begin{align}
+\frac{x-5}{5\lambda+2} &= \frac{2-y}{5} = \frac{1-z}{-1}, \\
+\frac{x}{1} &= \frac{y+\tfrac{1}{2}}{2\lambda} = \frac{z-1}{3}.
+\end{align}
 \end{frame}
 
-\begin{frame}{Vector form \& perpendicularity}
-Choose
-\[
-\vec{A}_1=\myvec{5\\2\\1},\ \vec{m}_1=\myvec{5\lambda+2\\-5\\1},\qquad
-\vec{A}_2=\myvec{0\\-\tfrac12\\1},\ \vec{m}_2=\myvec{1\\2\lambda\\3}.
-\]
-Compute
-\[
-\vec{m}_1^\top\vec{m}_2 = (5\lambda+2)-10\lambda+3 = -5\lambda+5.
-\]
-Hence \(\boxed{\lambda=1}\) for perpendicular directions.
+\begin{frame}{Solution: Direction Vectors}
+From the symmetric form, the points and direction vectors of each line are
+\begin{align}
+\vec{A} &= \myvec{5\\2\\1}, &
+\vec{m_1} &= \myvec{5\lambda+2\\-5\\1}, \\
+\vec{B} &= \myvec{0\\-\tfrac{1}{2}\\1}, &
+\vec{m_2} &= \myvec{1\\2\lambda\\3}.
+\end{align}
 \end{frame}
 
-\begin{frame}{Set up augmented matrix}
-Intersection needs \(\kappa_1,\kappa_2\) solving
-\(\kappa_1\vec{m}_1-\kappa_2\vec{m}_2=\vec{A}_2-\vec{A}_1\).
-Write the augmented matrix:
-\[
-\mathcal{M}_0 =
-\left[\begin{array}{cc|c}
-5\lambda+2 & -1 & -5 \\[2pt]
--5 & -2\lambda & -\tfrac{5}{2} \\[2pt]
-1 & -3 & 0
-\end{array}\right].
-\]
-We reduce \(\mathcal{M}_0\) to RREF using explicit row operations.
+\begin{frame}{Perpendicular Condition}
+The lines are perpendicular if
+\begin{align}
+\vec{m_1}^\top \vec{m_2} &= 0, \\
+(5\lambda+2)(1) + (-5)(2\lambda) + (1)(3) &= 0, \\
+5\lambda + 2 - 10\lambda + 3 &= 0, \\
+-5\lambda + 5 &= 0, \\
+\Rightarrow \lambda &= 1.
+\end{align}
 \end{frame}
 
-\begin{frame}{RREF — Step 1 (swap)}
-Swap \(R_1\leftrightarrow R_3\):
-\[
-\mathcal{M}_1 =
-\left[\begin{array}{cc|c}
-1 & -3 & 0 \\
--5 & -2\lambda & -\tfrac{5}{2} \\
-5\lambda+2 & -1 & -5
-\end{array}\right].
-\]
+\begin{frame}{Direction Vectors for $\lambda=1$}
+Substituting $\lambda=1$:
+\begin{align}
+\vec{m_1} &= \myvec{7\\-5\\1}, \quad 
+\vec{m_2} = \myvec{1\\2\\3}.
+\end{align}
+
+The matrix $M$ and vector $\vec{B}-\vec{A}$ are
+\begin{align}
+M &= \myvec{7 & 1\\-5 & 2\\1 & 3}, &
+\vec{B}-\vec{A} &= \myvec{-5\\-5/2\\0}.
+\end{align}
+
+The lines intersect if
+\begin{align}
+\operatorname{rank}\myvec{M & \vec{B}-\vec{A}} = 2.
+\end{align}
 \end{frame}
 
-\begin{frame}{RREF — Step 2 (eliminate col 1)}
-Eliminate first column using \(R_1\):
-\[
-R_2\leftarrow R_2+5R_1,\qquad R_3\leftarrow R_3-(5\lambda+2)R_1,
-\]
-giving
-\[
-\mathcal{M}_2 =
-\left[\begin{array}{cc|c}
-1 & -3 & 0 \\
-0 & -2\lambda-15 & -\tfrac{5}{2} \\
-0 & 15\lambda+5 & -5
-\end{array}\right].
-\]
+\begin{frame}{RREF Calculation}
+Augmented matrix:
+\begin{align}
+\myvec{
+7 & 1 & -5\\
+-5 & 2 & -\tfrac{5}{2}\\
+1 & 3 & 0
+}
+\end{align}
+
+Perform row operations:
+\begin{align}
+R_2 &\leftarrow R_2 + \tfrac{5}{7}R_1 =
+\myvec{7 & 1 & -5\\0 & 19/7 & -75/14\\1 & 3 & 0},\\
+R_3 &\leftarrow R_3 - \tfrac{1}{7}R_1 =
+\myvec{7 & 1 & -5\\0 & 19/7 & -75/14\\0 & 20/7 & 5/7}.
+\end{align}
+Next,
+\begin{align}
+R_2 &\leftarrow \tfrac{7}{19} R_2 =
+\myvec{7 & 1 & -5\\0 & 1 & -75/38\\0 & 20/7 & 5/7},\\
+R_3 &\leftarrow R_3 - \tfrac{20}{7} R_2 =
+\myvec{7 & 1 & -5\\0 & 1 & -75/38\\0 & 0 & 465/133}.
+\end{align}
+Finally,
+\begin{align}
+R_1 &\leftarrow \tfrac{1}{7} R_1 =
+\myvec{1 & 1/7 & -5/7\\0 & 1 & -75/38\\0 & 0 & 465/133}.
+\end{align}
 \end{frame}
 
-\begin{frame}{RREF — Step 3 (scale R2 and eliminate)}
-Scale \(R_2\) by \(1/(-2\lambda-15)\) (if nonzero) and eliminate column~2:
-\[
-R_2\leftarrow \frac{1}{-2\lambda-15}R_2,\quad
-R_1\leftarrow R_1+3R_2,\quad
-R_3\leftarrow R_3-(15\lambda+5)R_2.
-\]
-Resulting matrix has form
-\[
-\mathcal{M}_4 =
-\left[\begin{array}{cc|c}
-1 & 0 & * \\
-0 & 1 & * \\
-0 & 0 & r
-\end{array}\right],
-\]
-where \(r\) is the residual determining consistency.
+\begin{frame}{Rank Conclusion}
+The third row is nonzero, so there are three pivots:
+\begin{align}
+\operatorname{rank}\myvec{M & \vec{B}-\vec{A}} = 3, \quad
+\operatorname{rank}(M) = 2.
+\end{align}
+
+Hence, the lines do \emph{not} intersect.
 \end{frame}
 
-\begin{frame}{Consistency condition (RREF read-off)}
-From \(\mathcal{M}_2\) the two scalar rows give
-\[
-(-2\lambda-15)\kappa_2=-\tfrac{5}{2},\qquad (15\lambda+5)\kappa_2=-5.
-\]
-So
-\[
-\kappa_2=\frac{5}{30+4\lambda} \quad\text{and}\quad
-\kappa_2=-\frac{1}{3\lambda+1}.
-\]
-Equate them:
-\[
--\frac{1}{3\lambda+1}=\frac{5}{30+4\lambda}
-\]
-which yields \(\boxed{\lambda=-\tfrac{35}{19}}\) (intersection case).
+\begin{frame}{Result}
+\begin{align}
+\lambda &= 1
+\end{align}
+\begin{align}
+\text{The lines are perpendicular but do not intersect (they are skew).}
+\end{align}
 \end{frame}
 
-\begin{frame}{Check \(\lambda=1\)}
-At \(\lambda=1\) the two equations give
-\[
-\kappa_2=\tfrac{5}{34}\quad\text{and}\quad \kappa_2=-\tfrac{1}{4},
-\]
-a contradiction. Thus augmented system inconsistent \(\Rightarrow\) lines are skew for \(\lambda=1\).
-\end{frame}
 
-\begin{frame}{Summary}
-\begin{itemize}
-\item \(\lambda=1\) : direction vectors perpendicular; lines do not intersect (skew).
-\item \(\lambda=-\dfrac{35}{19}\) : RREF consistent; lines intersect (not perpendicular).
-\end{itemize}
-\end{frame}
 
 
 \begin{frame}[fragile]{C code}
@@ -355,138 +339,143 @@ plt.show()
 \begin{lstlisting}
 import numpy as np
 import matplotlib.pyplot as plt
-
-# Local imports (assuming these scripts are available and in PYTHONPATH)
 from line.funcs import *
 from triangle.funcs import *
 from conics.funcs import circ_gen
 
-# Given intersection parameter lambda (from your C-types code or calculation)
-lam = -35/19  # approx -1.8421
 
-# Calculate intersection parameters s and t for the lines
-# The two parametric lines from your problem:
+lam = 1.0  # perpendicular case
+
+A1 = np.array([5, 2, 1])          # Point on Line 1
+m1 = np.array([5*lam + 2, -5, 1])  # Direction vector of Line 1
+
+A2 = np.array([0, -0.5, 1])       # Point on Line 2
+m2 = np.array([1, 2*lam, 3])      # Direction vector of Line 2
+
+print(f"λ = {lam}")
+print(f"m1 = {m1}")
+print(f"m2 = {m2}")
+
  \end{lstlisting}
 \end{frame}
   \begin{frame}[fragile]{Only Python code}
 \begin{lstlisting}
-# Line 1:
-# x = 5 + (5*lam + 2)*t
-# y = 2 - 5*t
-# z = 1 + t
 
-# Line 2:
-# x = s
-# y = -0.5 + 2*lam*s
-# z = 1 + 3*s
 
-# We want to find s, t such that both lines intersect
+dot = np.dot(m1, m2)
+print(f"Dot product (m1·m2) = {dot}")
+if np.isclose(dot, 0):
+    print("Lines are perpendicular")
+else:
+    print(" Lines are not perpendicular")
 
-# From parametric equality:
-# 5 + (5*lam + 2)*t = s      ...(1)
-# 2 - 5*t = -0.5 + 2*lam*s   ...(2)
-# 1 + t = 1 + 3*s            ...(3)
 
-# Solve (3):
-# t = 3*s
+# Solve A1 + k1*m1 = A2 + k2*m2
+M = np.column_stack((m1, -m2))
+b = A2 - A1
+
+rank_M = np.linalg.matrix_rank(M)
+rank_aug = np.linalg.matrix_rank(np.column_stack((M, b)))
+
  \end{lstlisting}
 \end{frame}
   \begin{frame}[fragile]{Only Python code}
 \begin{lstlisting}
-# Substitute into (1):
-# 5 + (5*lam + 2)*3*s = s
-# 5 + 3*(5*lam + 2)*s = s
-# 5 = s - 3*(5*lam + 2)*s = s*(1 - 3*(5*lam + 2))
-# s = 5 / (1 - 3*(5*lam + 2))
 
-denom = 1 - 3*(5*lam + 2)
-s = 5 / denom
+if rank_M == rank_aug == 2:
+    print(" Lines intersect")
+    k1, k2 = np.linalg.lstsq(M, b, rcond=None)[0]
+    inter_pt = A1 + k1*m1
+    print(f"Intersection point: {np.round(inter_pt, 3)}")
+else:
+    print(" Lines do not intersect (skew lines)")
+    inter_pt = None
 
-# Then t = 3*s
-t = 3*s
-
-# Calculate intersection point from line 2 (or line 1)
-inter_point = np.array([
-    s,
-    -0.5 + 2*lam*s,
-    1 + 3*s
-])
+if inter_pt is None:
+    # vector between points on lines
+    w0 = A1 - A2
+    a = np.dot(m1, m1)
+    b_ = np.dot(m1, m2)
+    c = np.dot(m2, m2)
+    d = np.dot(m1, w0)
+    e = np.dot(m2, w0)
+  
  \end{lstlisting}
 \end{frame}
   \begin{frame}[fragile]{Only Python code}
 \begin{lstlisting}
-print(f"Intersection parameters: s = {s:.5f}, t = {t:.5f}")
-print(f"Intersection Point: ({inter_point[0]:.5f}, {inter_point[1]:.5f}, {inter_point[2]:.5f})")
+  
+    denom = a*c - b_**2
+    s_c = (b_*d - a*e)/denom
+    t_c = (b_*s_c + d)/a
+    
+    pt_line1 = A1 + t_c*m1
+    pt_line2 = A2 + s_c*m2
+    inter_segment = np.column_stack((pt_line1, pt_line2))
+    print(f"Closest points on lines: {pt_line1}, {pt_line2}")
 
-# Define parametric lines for plotting near intersection point
 
-def line1(t_vals):
-    x = 5 + (5*lam + 2)*t_vals
-    y = 2 - 5*t_vals
-    z = 1 + t_vals
-    return x, y, z
+t_vals = np.linspace(-2, 2, 100)
+s_vals = np.linspace(-2, 2, 100)
 
-def line2(s_vals):
-    x = s_vals
-    y = -0.5 + 2*lam*s_vals
-    z = 1 + 3*s_vals
-    return x, y, z
- \end{lstlisting}
-\end{frame}
-  \begin{frame}[fragile]{Only Python code}
-\begin{lstlisting}
-# Plot ranges close to intersection
-t_vals = np.linspace(t - 1, t + 1, 100)
-s_vals = np.linspace(s - 1, s + 1, 100)
+x1, y1, z1 = A1[0] + m1[0]*t_vals, A1[1] + m1[1]*t_vals, A1[2] + m1[2]*t_vals
+x2, y2, z2 = A2[0] + m2[0]*s_vals, A2[1] + m2[1]*s_vals, A2[2] + m2[2]*s_vals
 
-x1, y1, z1 = line1(t_vals)
-x2, y2, z2 = line2(s_vals)
-
-# Plotting
 fig = plt.figure(figsize=(10, 8))
 ax = fig.add_subplot(111, projection='3d')
 
-ax.plot(x1, y1, z1, label='Line 1', color='blue', linewidth=2)
-ax.plot(x2, y2, z2, label='Line 2', color='red', linewidth=2)
-
-# Mark intersection
-ax.scatter(*inter_point, color='green', s=80, label='Intersection Point')
  \end{lstlisting}
 \end{frame}
   \begin{frame}[fragile]{Only Python code}
 \begin{lstlisting}
-# Annotate intersection point
-ax.text(inter_point[0], inter_point[1], inter_point[2],
-        f"A\n({inter_point[0]:.2f}, {inter_point[1]:.2f}, {inter_point[2]:.2f})",
-        color='green', fontsize=12, ha='center', va='bottom')
 
-# Axis labels and title
-ax.set_xlabel("X axis", fontsize=12)
-ax.set_ylabel("Y axis", fontsize=12)
-ax.set_zlabel("Z axis", fontsize=12)
-ax.set_title("3D Plot of Two Lines and their Intersection", fontsize=14)
+# Plot lines
+ax.plot(x1, y1, z1, color='blue', label='Line 1', linewidth=2)
+ax.plot(x2, y2, z2, color='red', label='Line 2', linewidth=2)
 
+# Plot intersection point if exists
+if inter_pt is not None:
+    ax.scatter(*inter_pt, color='green', s=80, label='Intersection')
+    ax.text(inter_pt[0], inter_pt[1], inter_pt[2],
+            f"({inter_pt[0]:.2f}, {inter_pt[1]:.2f}, {inter_pt[2]:.2f})",
+            color='green', fontsize=12, ha='center', va='bottom')
+
+ \end{lstlisting}
+\end{frame}
+  \begin{frame}[fragile]{Only Python code}
+\begin{lstlisting}
+
+# Plot shortest segment if lines are skew
+if inter_pt is None:
+    ax.plot(inter_segment[0], inter_segment[1], inter_segment[2], color='purple', 
+            linewidth=3, label='Shortest Segment')
+    ax.scatter(*pt_line1, color='purple', s=50)
+    ax.scatter(*pt_line2, color='purple', s=50)
+
+# Labels and legend
+ax.set_xlabel("X-axis")
+ax.set_ylabel("Y-axis")
+
+ \end{lstlisting}
+\end{frame}
+  \begin{frame}[fragile]{Only Python code}
+\begin{lstlisting}
+
+ax.set_zlabel("Z-axis")
+ax.set_title("3D Plot of Two Lines with Perpendicularity Check")
 ax.legend()
 ax.grid(True)
 ax.view_init(elev=20, azim=45)
-
 plt.tight_layout()
 plt.show()
 
  \end{lstlisting}
 \end{frame}
+
 \begin{frame}{PLOTS}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\columnwidth]{figs/fig71.png}
-        \caption{}
-        \label{fig:placeholder}
-    \end{figure}
-\end{frame}
-\begin{frame}{PLOTS}
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.9\columnwidth]{figs/fig72.png}
+        \includegraphics[width=0.9\columnwidth]{figs/fig.png}
         \caption{}
         \label{fig:placeholder}
     \end{figure}

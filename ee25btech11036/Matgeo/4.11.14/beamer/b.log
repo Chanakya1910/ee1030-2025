@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.8.29)  10 OCT 2025 10:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.8.29)  12 OCT 2025 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1646,66 +1646,66 @@ No file b.nav.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-rm.enc}]
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-01.
+00.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-101.
+100.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-101.
+100.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 101.
+(Font)              <10.95> on input line 100.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 101.
+(Font)              <8> on input line 100.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 101.
+(Font)              <6> on input line 100.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
-01.
+00.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
-01.
+00.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 1
-01.
+00.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
-01.
+00.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-01.
+00.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 101.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 100.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 101.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 100.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 101.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 100.
 
 
 
@@ -1714,13 +1714,13 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-mathsy.enc}]
 LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 114.
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 110.
 
 LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 114.
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 110.
 
 LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 114.
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 110.
 
 
 
@@ -1731,10 +1731,39 @@ LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
 [4
 
 ]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 140.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 140.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 140.
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <14.4> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 140.
+
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 140.
+
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <7> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 140.
+
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 140.
+
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 140.
+
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 140.
+
+
 
 [5
 
 ]
+Overfull \vbox (121.10043pt too high) detected at line 171
+ []
+
+
 
 [6
 
@@ -1747,39 +1776,6 @@ LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
 [8
 
 ]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 201.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 201.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 201.
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 201.
-
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 201.
-
-LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 201.
-
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 201.
-
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 201.
-
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 201.
-
-
-
-[9
-
-]
-
-[10
-
-]
 \openout4 = `b.vrb'.
 
  (./b.vrb
@@ -1788,19 +1784,19 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line
  (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ))
-Overfull \vbox (13.72923pt too high) detected at line 230
+Overfull \vbox (13.72923pt too high) detected at line 214
  []
 
 
 
-[11
+[9
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}]
 \openout4 = `b.vrb'.
 
  (./b.vrb)
 
-[12
+[10
 
 ]
 \openout4 = `b.vrb'.
@@ -1812,7 +1808,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ))
 
-[13
+[11
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}]
 \openout4 = `b.vrb'.
@@ -1861,12 +1857,12 @@ l.8 ... {Fraction(lam_inter).limit_denominator()}"
                                                   )
 ? 
 )
-Overfull \vbox (25.72923pt too high) detected at line 285
+Overfull \vbox (25.72923pt too high) detected at line 269
  []
 
 
 
-[14
+[12
 
 ]
 \openout4 = `b.vrb'.
@@ -2063,12 +2059,12 @@ l.19 ...nes do NOT intersect for intersection Î»."
                                                   )
 ? 
 )
-Overfull \vbox (1.72923pt too high) detected at line 306
+Overfull \vbox (1.72923pt too high) detected at line 290
  []
 
 
 
-[15
+[13
 
 ]
 \openout4 = `b.vrb'.
@@ -2116,7 +2112,7 @@ l.19 ax.plot(x2, y2, z2, label="Line 2"
 ? 
 )
 
-[16
+[14
 
 ]
 \openout4 = `b.vrb'.
@@ -2165,7 +2161,7 @@ l.7 ...inter_point[1]:.2f}, {inter_point[2]:.2f})"
 ? 
 )
 
-[17
+[15
 
 ]
 \openout4 = `b.vrb'.
@@ -2253,20 +2249,266 @@ l.7 ..._title("3D Plot: Intersection of Two Lines"
 ? 
 )
 
+[16
+
+]
+\openout4 = `b.vrb'.
+
+ (./b.vrb
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 print(f"
+             Î» = {lam}")
+? 
+
+! LaTeX Error: Invalid UTF-8 byte sequence (Î\lst@EC»).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 print(f"Î» 
+                = {lam}")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 print(f"Î» = {lam}"
+                        )
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 print(f"
+             m1 = {m1}")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 print(f"m1 = {m1}"
+                       )
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 print(f"
+             m2 = {m2}")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 print(f"m2 = {m2}"
+                       )
+? 
+)
+Overfull \vbox (1.72923pt too high) detected at line 360
+ []
+
+
+
+[17
+
+]
+\openout4 = `b.vrb'.
+
+ (./b.vrb
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 print(f"
+            Dot product (m1Â·m2) = {dot}")
+? 
+
+! LaTeX Error: Invalid UTF-8 byte sequence (Â\lst@EC·).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 print(f"Dot product (m1Â·m2)
+                                 = {dot}")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 print(f"Dot product (m1Â·m2) = {dot}"
+                                         )
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     print("
+               Lines are perpendicular")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     print("Lines are perpendicular"
+                                       )
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     print("
+                 Lines are not perpendicular")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     print(" Lines are not perpendicular"
+                                             )
+? 
+)
+
 [18
 
 ]
 \openout4 = `b.vrb'.
 
- (./b.vrb)
+ (./b.vrb
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5     print("
+                Lines intersect")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5     print(" Lines intersect"
+                                )
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8     print(f"
+                Intersection point: {np.round(inter_pt, 3)}")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...ntersection point: {np.round(inter_pt, 3)}"
+                                                  )
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10     print("
+                 Lines do not intersect (skew lines)")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 ...int(" Lines do not intersect (skew lines)"
+                                                  )
+? 
+)
+Overfull \vbox (1.72923pt too high) detected at line 404
+ []
+
+
 
 [19
 
 ]
 \openout4 = `b.vrb'.
 
- (./b.vrb)
-Overfull \vbox (13.72923pt too high) detected at line 393
+ (./b.vrb
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11     print(f"
+                 Closest points on lines: {pt_line1}, {pt_line2}")
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 ...t points on lines: {pt_line1}, {pt_line2}"
+                                                  )
+? 
+)
+Overfull \vbox (37.72923pt too high) detected at line 428
  []
 
 
@@ -2276,11 +2518,28 @@ Overfull \vbox (13.72923pt too high) detected at line 393
 ]
 \openout4 = `b.vrb'.
 
- (./b.vrb)
-Overfull \vbox (1.72923pt too high) detected at line 415
- []
+ (./b.vrb
 
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12             f"
+                   ({inter_pt[0]:.2f}, {inter_pt[1]:.2f}, {inter_pt[2]:.2f})",
+? 
+
+! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...f}, {inter_pt[1]:.2f}, {inter_pt[2]:.2f})"
+                                                  ,
+? 
+)
 
 [21
 
@@ -2295,8 +2554,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3 print(f"
-            Intersection parameters: s = {s:.5f}, t = {t:.5f}")
+l.12 ax.set_xlabel("
+                    X-axis")
 ? 
 
 ! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
@@ -2305,8 +2564,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3 ...ction parameters: s = {s:.5f}, t = {t:.5f}"
-                                                  )
+l.12 ax.set_xlabel("X-axis"
+                           )
 ? 
 
 ! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
@@ -2315,9 +2574,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 print(f"
-            Intersection Point: ({inter_point[0]:.5f}, {inter_point[1]:.5f},...
-
+l.13 ax.set_ylabel("
+                    Y-axis")
 ? 
 
 ! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
@@ -2326,19 +2584,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 ...inter_point[1]:.5f}, {inter_point[2]:.5f})"
-                                                  )
+l.13 ax.set_ylabel("Y-axis"
+                           )
 ? 
 )
 
 [22
-
-]
-\openout4 = `b.vrb'.
-
- (./b.vrb)
-
-[23
 
 ]
 \openout4 = `b.vrb'.
@@ -2351,9 +2602,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5         f"
-              A\n({inter_point[0]:.2f}, {inter_point[1]:.2f}, {inter_point[2...
-
+l.4 ax.set_zlabel("
+                   Z-axis")
 ? 
 
 ! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
@@ -2362,8 +2612,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 ...inter_point[1]:.2f}, {inter_point[2]:.2f})"
-                                                  ,
+l.4 ax.set_zlabel("Z-axis"
+                          )
 ? 
 
 ! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
@@ -2372,8 +2622,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 ax.set_xlabel("
-                   X axis", fontsize=12)
+l.5 ax.set_title("
+                  3D Plot of Two Lines with Perpendicularity Check")
 ? 
 
 ! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
@@ -2382,112 +2632,28 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 ax.set_xlabel("X axis"
-                          , fontsize=12)
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 ax.set_ylabel("
-                    Y axis", fontsize=12)
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 ax.set_ylabel("Y axis"
-                           , fontsize=12)
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ax.set_zlabel("
-                    Z axis", fontsize=12)
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ax.set_zlabel("Z axis"
-                           , fontsize=12)
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 ax.set_title("
-                   3D Plot of Two Lines and their Intersection", fontsize=14)
-? 
-
-! LaTeX Error: Command \textquotedbl unavailable in encoding OT1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 ... Plot of Two Lines and their Intersection"
-                                                  , fontsize=14)
+l.5 ...t of Two Lines with Perpendicularity Check"
+                                                  )
 ? 
 )
-Overfull \vbox (13.72923pt too high) detected at line 477
+
+[23
+
+]
+<figs/fig.png, id=684, 722.7pt x 578.16pt>
+File: figs/fig.png Graphic file (type png)
+<use figs/fig.png>
+Package pdftex.def Info: figs/fig.png  used on input line 482.
+(pdftex.def)             Requested size: 308.06367pt x 246.45139pt.
+
+Overfull \vbox (54.92506pt too high) detected at line 482
  []
 
 
 
 [24
 
-]
-<figs/fig71.png, id=713, 722.7pt x 578.16pt>
-File: figs/fig71.png Graphic file (type png)
-<use figs/fig71.png>
-Package pdftex.def Info: figs/fig71.png  used on input line 485.
-(pdftex.def)             Requested size: 308.06367pt x 246.45139pt.
-
-Overfull \vbox (54.92506pt too high) detected at line 485
- []
-
-
-
-[25
-
- <./figs/fig71.png>]
-<figs/fig72.png, id=745, 722.7pt x 578.16pt>
-File: figs/fig72.png Graphic file (type png)
-<use figs/fig72.png>
-Package pdftex.def Info: figs/fig72.png  used on input line 493.
-(pdftex.def)             Requested size: 308.06367pt x 246.45139pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:placehold
-er}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.493 \end{frame}
-                 
-Overfull \vbox (54.92506pt too high) detected at line 493
- []
-
-
-
-[26
-
- <./figs/fig72.png>]
+ <./figs/fig.png>]
 \tf@nav=\write7
 \openout7 = `b.nav'.
 
@@ -2516,13 +2682,13 @@ Package rerunfilecheck Info: Checksums for `b.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 59285 strings out of 475178
- 1434109 string characters out of 5766539
- 2527941 words of memory out of 5000000
- 81241 multiletter control sequences out of 15000+600000
+ 59196 strings out of 475178
+ 1432263 string characters out of 5766539
+ 2542941 words of memory out of 5000000
+ 81154 multiletter control sequences out of 15000+600000
  626819 words of font info for 109 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
- 101i,15n,107p,1169b,1461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,16n,107p,1169b,1461s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/p
@@ -2531,10 +2697,10 @@ re/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/publi
 c/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmtt10.pfb>
-Output written on b.pdf (26 pages, 412816 bytes).
+Output written on b.pdf (24 pages, 307641 bytes).
 PDF statistics:
- 842 PDF objects out of 1000 (max. 8388607)
- 725 compressed objects within 8 object streams
- 54 named destinations out of 1000 (max. 500000)
- 95 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 783 PDF objects out of 1000 (max. 8388607)
+ 673 compressed objects within 7 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 84 words of extra memory for PDF output out of 10000 (max. 10000000)
 
